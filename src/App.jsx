@@ -1,14 +1,17 @@
 
 import { Navigation } from "./components/Navigation";
 import { Products } from "./components/Products";
+import { Provider } from "./context/Provider";
 
 export function App() {
   return (
     <>
-      <Navigation />
-      <main className="w-full max-w-7xl m-auto px-4">
-        <Products />
-      </main>
+      <Provider>
+        <Navigation />
+        <main className="w-full max-w-7xl m-auto px-4">
+          <Products />
+        </main>
+      </Provider>
     </>
   )
 }
