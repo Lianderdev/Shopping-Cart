@@ -8,11 +8,11 @@ export function ProductCard({ title, thumbnail, price }) {
     const value = formatCurrency(price, 'USD')
 
     return (
-        <div className="w-full flex flex-col bg-slate-50 cursor-pointer">
+        <div className="w-full flex flex-col bg-slate-50 cursor-pointer rounded-xl overflow-hidden">
             <img src={img} alt={title} />
             <div className="flex flex-col px-4 py-2 border-t border-slate-300 text-black">
                 <h2 className="font-semibold text-xl">{value}</h2>
-                <h3 className="leading-tight">{name}</h3>
+                <h3 className="leading-tight text-sm">{name}</h3>
             </div>
         </div>
     )

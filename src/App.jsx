@@ -8,7 +8,7 @@ export function App() {
     <>
       <Provider>
         <Navigation />
-        <main className="w-full max-w-7xl m-auto px-4">
+        <main className="w-full max-w-6xl m-auto px-4">
           <Products />
         </main>
       </Provider>
